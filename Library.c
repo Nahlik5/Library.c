@@ -1,13 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
 
+/*
+Ephraim Masika
+D33-8001-2020
+Library Fine payment 
+*/
+#include <stdio.h>
 struct Date {
     int day;
     int month;
     int year;
 };
 
-// Function to calculate the difference in days between two dates
+// Function to calculate the difference in between two dates
 int dateDifference(struct Date start, struct Date end) {
     // Convert both dates to "days since a base date"
     int totalStartDays = start.year * 365 + start.month * 30 + start.day;
